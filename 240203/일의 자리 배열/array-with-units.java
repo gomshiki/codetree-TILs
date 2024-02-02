@@ -10,11 +10,11 @@ public class Main {
         arry[1]= sc.nextInt();
         arry[2]= sc.nextInt();
 
-        for(int i = 3; i <= 11 ; i++){
-            arry[i] = (arry[i-1] + arry[i-2])%10;
+        for(int i = 3; i <= 10 ; i++){
+            arry[i] = (arry[i-1] + arry[i-2]) % 10;
         }
 
-        for(int j = 1; j <= 11 ; j++){
+        for(int j = 1; j <= 10 ; j++){
             System.out.printf("%d " , arry[j]);
         }
 
