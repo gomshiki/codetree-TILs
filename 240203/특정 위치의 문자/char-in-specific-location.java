@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // 여기에 코드를 작성해주세요.
+        Scanner sc = new Scanner(System.in);
+
+        char[] arry = new char[]{'L', 'E', 'B', 'R', 'O', 'S'};
+
+        int idx = -1;
+
+        char a = sc.next().charAt(0);
+        for(int i = 0 ; i < arry.length; i++){
+        
+            if(arry[i] == a) idx = i;
+        }
+
+        if(idx != -1){
+            System.out.println(idx);
+        }else{
+            System.out.println("None");
+        }
+    }
+}
