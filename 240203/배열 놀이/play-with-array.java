@@ -28,7 +28,7 @@ public class Main {
             
             if(query == 1) { 
                 int targetNum = sc.nextInt();
-                System.out.println(targetNum);
+                System.out.println(arry[targetNum-1]);
             }
             else if(query == 2){
 
