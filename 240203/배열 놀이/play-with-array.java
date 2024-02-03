@@ -29,7 +29,7 @@ public class Main {
             if(query == 1) { 
                 int targetNum = sc.nextInt();
                 System.out.println(arry[targetNum-1]);
-            }
+            }4
             else if(query == 2){
 
                 int targetNum = sc.nextInt(); // 5
