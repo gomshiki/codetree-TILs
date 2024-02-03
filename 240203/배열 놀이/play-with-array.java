@@ -23,6 +23,7 @@ public class Main {
         //       없으면 0 출력
         // 3 1 2 : 1~2까지 순서대로 출력
         for(int i = 0 ; i < q; i++){
+            
             int query = sc.nextInt();
             
             if(query == 1) { 
@@ -31,7 +32,7 @@ public class Main {
             }
             else if(query == 2){
 
-                int targetNum = sc.nextInt();
+                int targetNum = sc.nextInt(); // 5
                 int cnt = 0;
 
                 for(int j = 0 ; j < n ; j++){
