@@ -16,13 +16,13 @@ public class Main {
             
             arry[i] = sc.nextInt();
             if(minVal > arry[i]) {
-                minVal = val;
+                minVal = arry[i];
             }
 
         }
 
         for(int j =0; j < n; j++){
-            if(arry[j]==minVal) cnt++.
+            if(arry[j]==minVal) cnt++;
         }
         
         System.out.println(minVal + " " + cnt);
