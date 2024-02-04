@@ -33,8 +33,8 @@ public class Main {
             
             if(seqA[i] == seqB[0]){
                 int cnt = 0;
-                for(int j = 1; j < bCnt ; j++, i++){
-                    if(seqA[i+1] == seqB[j]) cnt++;
+                for(int j = 0; j < bCnt ; j++, i++){
+                    if(seqA[i] == seqB[j]) cnt++;
                 }
                 result = (cnt == bCnt ? "Yes" : "No");
                 break;
