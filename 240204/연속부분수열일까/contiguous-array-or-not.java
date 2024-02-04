@@ -38,6 +38,8 @@ public class Main {
                 }
                 result = cnt == seqB.length ? "Yes" : "No";
                 break;
+            }else{
+                result = "No";
             }
             
 
