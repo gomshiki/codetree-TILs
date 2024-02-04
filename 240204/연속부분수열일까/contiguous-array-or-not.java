@@ -37,7 +37,6 @@ public class Main {
                     if(seqA[i] == seqB[j]) cnt++;
                 }
                 result = cnt == seqB.length ? "Yes" : "No";
-                continue;
             }else{
                 result = "No";
             }
