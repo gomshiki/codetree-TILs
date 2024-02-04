@@ -36,21 +36,20 @@ public class Main {
                 int targetNum = sc.nextInt(); // 5
                 int cnt = 0;
                 int idx = 0;
-
                 for(int j = 0 ; j < n ; j++){
 
                     if(targetNum == arry[j]){
                         cnt++;
-                        if(cnt >= 2){
-                            System.out.println(idx + 1);
+                        if(cnt == 1){
+                            idx = j;
                         }
-                        idx = j;
                         
                     }
 
                 }
                 
                 if(cnt == 0) System.out.println(0);
+                else System.out.println(idx+1);
                 
             }
             else if(query == 3){
