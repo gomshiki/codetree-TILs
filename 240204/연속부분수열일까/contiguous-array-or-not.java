@@ -31,12 +31,12 @@ public class Main {
         // 문제해결 로직
         for(int i = 0; i < aCnt ; i++){
             
-            if(seqA[i] == seqB[0]){
+            if(seqA[i] == seqB[0]){ 
                 int cnt = 0;
                 for(int j = 0; j < bCnt ; j++, i++){
                     if(seqA[i] == seqB[j]) cnt++;
                 }
-                result = (cnt == bCnt ? "Yes" : "No");
+                result = cnt == seqB.length ? "Yes" : "No";
                 break;
             }
             
