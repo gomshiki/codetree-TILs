@@ -29,15 +29,13 @@ public class Main {
 
 
         // 문제해결 로직
-        // 9 2 4 1 3 3 1 4 6 8
-        // 4 1 3 3 1 4
         for(int i = 0; i < aCnt ; i++){
             
-            if(seqA[i] == seqB[0]){  // i=2
+            if(seqA[i] == seqB[0] && seqA.length - i >= seqB.length){
                 int cnt = 0;
                 int k = i;
                 for(int j = 0; j < bCnt ; j++, k++){ 
-                    if(seqA[k] == seqB[j]) cnt++; // cnt = 6
+                    if(seqA[k] == seqB[j]) cnt++; 
                 }
                 if( cnt == bCnt ){
                     result = "Yes";
