@@ -35,14 +35,19 @@ public class Main {
 
                 int targetNum = sc.nextInt(); // 5
                 int cnt = 0;
+                int idx = 0;
 
                 for(int j = 0 ; j < n ; j++){
 
                     if(targetNum == arry[j]){
-                        System.out.println(j + 1);
                         cnt++;
+                        if(cnt >= 2){
+                            System.out.println(idx + 1);
+                        }
+                        idx = j;
+                        
                     }
-                                        
+
                 }
                 
                 if(cnt == 0) System.out.println(0);
