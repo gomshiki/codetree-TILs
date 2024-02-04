@@ -20,7 +20,7 @@ public class Main {
         }
 
         int maxVal = -1;
-        for(int j = 0; j < 1000 ; j++){
+        for(int j = 0; j < N ; j++){
 // 1
 // 188
             if(arry[arryIdx[j]] == 1){
