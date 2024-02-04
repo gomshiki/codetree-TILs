@@ -42,13 +42,10 @@ public class Main {
                 if( cnt == bCnt ){
                     result = "Yes";
                     break;
-                }else{
-                    continue;
                 }
             }
 
         }
-
         System.out.println(result);
 
     }
