@@ -13,8 +13,10 @@ public class Main {
         for(int i = 0; i < n; i++){
             
             int val = sc.nextInt();
-            if(minVal >= val) {
+            if(minVal > val) {
                 minVal = val;
+            }
+            if(minVal == val){
                 cnt++;
             }
 
