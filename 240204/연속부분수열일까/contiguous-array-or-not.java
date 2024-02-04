@@ -36,6 +36,7 @@ public class Main {
                 for(int j = 0; j < bCnt ; j++, i++){
                     if(seqA[i] == seqB[j]) cnt++;
                 }
+                System.out.println("if문 안")
                 result = cnt == seqB.length ? "Yes" : "No";
             }else{
                 result = "No";
