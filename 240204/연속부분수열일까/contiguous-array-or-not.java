@@ -25,26 +25,31 @@ public class Main {
         for(int i = 0; i < bCnt ; i++){
             seqB[i] = sc.nextInt();
         }
-        String result = "";
+        String result = "No";
 
 
         // 문제해결 로직
+        // 9 2 4 1 3 3 1 4 6 8
+        // 4 1 3 3 1 4
         for(int i = 0; i < aCnt ; i++){
             
-            if(seqA[i] == seqB[0]){ 
+            if(seqA[i] == seqB[0]){  // i=2
                 int cnt = 0;
-                for(int j = 0; j < bCnt ; j++, i++){
-                    if(seqA[i] == seqB[j]) cnt++;
+                int k = i;
+                for(int j = 0; j < bCnt ; j++, k++){ 
+                    if(seqA[k] == seqB[j]) cnt++; // cnt = 6
                 }
-                System.out.println("if문 안");
-                result = cnt == seqB.length ? "Yes" : "No";
-            }else{
-                result = "No";
+                if( cnt == bCnt ){
+                    result = "Yes";
+                    break;
+                }else{
+                    continue;
+                }
             }
-            
 
         }
-            System.out.println(result);
+
+        System.out.println(result);
 
     }
 }
