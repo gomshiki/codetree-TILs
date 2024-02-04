@@ -7,8 +7,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();
-        int[] arry = new int[N+1];
-        int[] arryIdx = new int[1000];
+        int[] arry = new int[1000];
+        int[] arryIdx = new int[N+1];
 
         // 배열 초기화
         for(int i = 0; i < N; i++){
