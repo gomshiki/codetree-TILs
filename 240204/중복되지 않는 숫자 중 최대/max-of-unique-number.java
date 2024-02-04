@@ -20,9 +20,9 @@ public class Main {
         }
 
         int maxVal = -1;
-        for(int j = 0; j < N ; j++){
-//5
-//1 2 3 4 5
+        for(int j = 0; j < 1000 ; j++){
+// 1
+// 188
             if(arry[arryIdx[j]] == 1){
                 if(arryIdx[j] > maxVal){
                     maxVal = arryIdx[j];
