@@ -27,9 +27,7 @@ public class Main {
             
         }
 
-        for(int k =0; k < n ; k++){
-            System.out.print(arry[k] + " ");
-        }
+        System.out.printf("%d %d", arry[0], arry[1]);
 
     }
 }
