@@ -30,8 +30,11 @@ public class Main {
 
         // 문제해결 로직
         for(int i = 0; i < aCnt ; i++){
+            if(seqA.length - i < seqB.length){
+                break;
+            }
             
-            if(seqA[i] == seqB[0] && seqA.length - i >= seqB.length){
+            if(seqA[i] == seqB[0]){
                 int cnt = 0;
                 int k = i;
                 for(int j = 0; j < bCnt ; j++, k++){ 
