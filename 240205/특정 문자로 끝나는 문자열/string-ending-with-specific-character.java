@@ -19,7 +19,7 @@ public class Main {
             if(target == arry[j].charAt(arry[j].length()-1)){
 
                 System.out.println(arry[j]);
-                idx = j;
+                idx++;
 
             }
 
