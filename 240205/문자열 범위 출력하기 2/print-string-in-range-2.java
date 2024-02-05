@@ -10,6 +10,7 @@ public class Main {
         int targetNum = sc.nextInt();
 
         for(int i = a.length()-1 ; i >= a.length() - targetNum ; i--){
+            
             if(targetNum > a.length()){
                 System.out.println(a);
                 break;
