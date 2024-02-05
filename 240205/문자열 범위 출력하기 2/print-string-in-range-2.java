@@ -14,9 +14,7 @@ public class Main {
                 System.out.println(a);
                 break;
             }else{
-
-            System.out.print(a.charAt(i));
-
+                System.out.print(a.charAt(i));
             }
         }
     }
