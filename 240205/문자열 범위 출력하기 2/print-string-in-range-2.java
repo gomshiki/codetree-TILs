@@ -8,13 +8,24 @@ public class Main {
 
         String a = sc.next();
         int targetNum = sc.nextInt();
-        int bound = a.length() - targetNum > 0?a.length() - targetNum : a.length();
 
-        for(int i = a.length()-1 ; i >= bound; i--){
-            
-            
+        // b
+        // 63
+
+        if(a.length() < targetNum){
+            for(int i = a.length()-1 ; i >= 0; i--){
+
                 System.out.print(a.charAt(i));
             
+            }    
+        }else{
+            for(int i = a.length()-1 ; i >= a.length() - targetNum; i--){
+
+                System.out.print(a.charAt(i));
+            
+            }
         }
+
+ 
     }
 }
