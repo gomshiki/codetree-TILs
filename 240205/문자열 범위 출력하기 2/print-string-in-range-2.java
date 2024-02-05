@@ -12,7 +12,9 @@ public class Main {
         for(int i = a.length()-1 ; i >= a.length() - targetNum ; i--){
             if(targetNum > a.length()){
                 System.out.println(a);
+                break;
             }else{
+
             System.out.print(a.charAt(i));
 
             }
