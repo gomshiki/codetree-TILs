@@ -12,7 +12,7 @@ public class Main {
             if(a.charAt(i) == b){
                 System.out.println(i);
                 break;
-            }else if(i == a.length()+1){
+            }else if(i == a.length()){
                 System.out.println("No");
             }
         }
