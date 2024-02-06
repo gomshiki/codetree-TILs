@@ -13,9 +13,8 @@ public class Main {
                 System.out.println(i);
                 break;
             }
-
-            if(a.length() + 1 == i){
-                System.out.println("No");
+            if(a.length() - 1 == i){
+            System.out.println("No");
             }
         }
         
