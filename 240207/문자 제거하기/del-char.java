@@ -12,7 +12,7 @@ public class Main {
             
             int b = sc.nextInt();
 
-            if( b > a.length()){
+            if( b >= a.length()){
                 a = a.substring(0,a.length()-1);
             }else{
                 a = a.substring(0, b) + a.substring(b+1);
