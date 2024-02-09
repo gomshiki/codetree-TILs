@@ -6,6 +6,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         char a = sc.next().charAt(0);
-        System.out.printf("%c" , a + 1);
+        // 122 -> 97
+        int result = (int) a < 122 ? a + 1 : 'a';
+        System.out.printf("%c", (char) result);
+
     }
 }
