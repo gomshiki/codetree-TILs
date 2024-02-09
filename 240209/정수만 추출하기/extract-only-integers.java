@@ -19,25 +19,25 @@ public class Main {
 
                 char target = A.charAt(i);
 
-                if(target >= '0' && target <= '9'){
-                    sb.append(target);
-                }else{
+                if(target < '0' || target > '9'){
                     sum += Integer.parseInt(sb.toString());
                     break;
+                }else{
+                    sb.append(target);
                 }
             }
 
             sb = new StringBuilder();
             for(int i = 0 ; i < B.length() ; i++){
-
                 char target = B.charAt(i);
-                if(target >= '0' && target <= '9'){
-                    sb.append(target);
-                }else{
+                if(target < '0' || target > '9'){
                     sum += Integer.parseInt(sb.toString());
                     break;
+                }else{
+                    sb.append(target);
                 }
             }
+
             System.out.println(sum);
             break;
         }
