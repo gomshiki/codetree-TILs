@@ -31,9 +31,10 @@ public class Main {
                     for(int j = a.length() ; j > 0 ; j--){
                         temp += a.charAt(j - 1); 
                     }
+                    a = temp;
 
 
-                    System.out.println(temp);
+                    System.out.println(a);
 
             }
         }
