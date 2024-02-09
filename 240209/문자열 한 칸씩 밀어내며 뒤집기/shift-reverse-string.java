@@ -5,8 +5,9 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
 
-        String a = sc.next();
-
+        String inputStr = sc.next();
+        
+        int strSize = inputStr.length();
         int q = sc.nextInt();
 
         for(int i = 0 ; i  < q ; i++){
@@ -15,28 +16,34 @@ public class Main {
             // abcd
 
             if(b == 1){
-               a = a.substring(1, a.length()) + a.charAt(0); 
+               inputStr = inputStr.substring(1, strSize) + inputStr.charAt(0); 
+            System.out.println(inputStr);
+
                
             }
 
-            if(b == 2){
-                a = a.charAt(a.length()-1) + a.substring(0, a.length()-1);
+            else if(b == 2){
+                inputStr = inputStr.charAt(strSize-1) + inputStr.substring(0, strSize-1);
+            System.out.println(inputStr);
+
             }
 
-            if(b == 3){
+            else if(b == 3){
 
-                    String temp = "";
+                char[] arr = inputStr.toCharArray();
 
-                    for(int j = a.length() ; j > 0 ; j--){
-                        temp += a.charAt(j - 1); 
-                    }
-                    a = temp;
+                char temp;
+                for(int j = 0; j < strSize / 2; j++) {
+                    temp = arr[j];
+                    arr[j] = arr[strSize - j - 1];
+                    arr[strSize - j - 1] = temp;
+                }
 
-
+                inputStr = new String(arr);
+                System.out.println(inputStr);
 
             }
             
-            System.out.println(a);
 
         }
 
