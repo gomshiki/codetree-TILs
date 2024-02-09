@@ -20,12 +20,12 @@ public class Main {
                
             }
 
-            else if(b == 2){
+            if(b == 2){
                 a = a.charAt(a.length()-1) + a.substring(0, a.length()-1);
                 System.out.println(a);
             }
 
-            else if(b == 3){
+            if(b == 3){
                     String temp = "";
 
                     for(int j = a.length() ; j > 0 ; j--){
