@@ -16,8 +16,15 @@ public class Main {
                break;
 
             }else{
+                char[] arr = A.toCharArray();
                 
-                A = A.charAt(A.length()-1) + A.substring(0, A.length()-1);
+                char last = arr[A.length() - 1];
+                for(int i = A.length() - 2 ; i >= 0 ; i--){
+                    arr[i + 1] = arr[i];
+                }
+                arr[0] = last;
+
+                A = new String(arr);
                 cnt++;
             }
 
