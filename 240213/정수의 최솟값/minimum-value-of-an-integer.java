@@ -15,9 +15,10 @@ public class Main {
 
     static int fun(int a, int b ,int c){
         
-        int result = a >= b ? (( b >= c ) ? ((c >= a) ? a : c) : b) : a;
+        int minVal = a;
+        if(minVal > b) minVal = b;
+        if(minVal > c) minVal = c;
 
-        
-        return result;
+        return minVal;
     }
 }
