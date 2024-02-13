@@ -9,7 +9,7 @@ public class Main {
         int m = sc.nextInt();
 
         int gcd = gcd(n,m);
-        int lcm = n*m/gcd;
+        int lcm = (n*m)/gcd;
 
         System.out.println(lcm);
     }
