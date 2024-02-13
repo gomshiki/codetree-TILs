@@ -17,20 +17,20 @@ public class Main {
     public static int gcd(int n , int m){
         /**
             두 수 a와 b의 최소공배수는 a와 b의 곱을 a와 b의 최대공약수를 나눈 것과 같다. 
-            이 성질을 이용해서 위의 최대공약수를 구하는 함수와 함께 최소공배수를 쉽게 구할 수 있다.
         */
-        int result = 0;
+        int gcd = 0;
 
-        for(int i = 1 ; i <Math.min(n, m) ; i++){
+        for(int i = 1 ; i < Math.min(n, m) ; i++){
 
-            if(n % i ==0 && m % i == 0){
-                if(result < i){
-                    result = i;
-                }
+            if(n % i == 0 && m % i == 0){
+                
+                gcd = i;
+                
             }
 
         }
-        return result;
+
+        return gcd;
 
 
     }
