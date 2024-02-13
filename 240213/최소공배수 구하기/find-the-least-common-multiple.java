@@ -22,7 +22,7 @@ public class Main {
 
         for(int i = 0 ; i < Math.min(n, m) ; i++){
 
-            if(n % i+1 == 0 && m % i+1 == 0){
+            if(n % (i+1) == 0 && m % (i+1) == 0){
                 
                 gcd = i+1;
                 
