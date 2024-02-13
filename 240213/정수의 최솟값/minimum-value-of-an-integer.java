@@ -15,7 +15,7 @@ public class Main {
 
     static int fun(int a, int b ,int c){
         
-        int result = a > b ? (( b > c ) ? ((c > a) ? a : c) : b) : a;
+        int result = a >= b ? (( b >= c ) ? ((c >= a) ? a : c) : b) : a;
 
         
         return result;
