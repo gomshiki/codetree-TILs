@@ -12,7 +12,7 @@ public class Main {
 
     static void func(int n){
 
-        if(n % 2 ==0){
+        if(n % 2 == 0){
 
             int a = n % 10; // 1의 자리
             int b = (n / 10); // 10의 자리 
@@ -23,7 +23,10 @@ public class Main {
                 System.out.println("No");
             }
 
-        }
+        }else{
+                System.out.println("No");
+            }
+
 
     }
 
