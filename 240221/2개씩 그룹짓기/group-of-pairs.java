@@ -14,9 +14,6 @@ public class Main {
 
         Arrays.sort(arr);
         
-        for(int i = 0 ; i < n ; i++){
-            System.out.print(arr[i] + " ");
-        }
         int result = func(arr);
 
         System.out.println(result);
