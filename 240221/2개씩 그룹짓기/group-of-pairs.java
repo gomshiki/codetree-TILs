@@ -23,7 +23,7 @@ public class Main {
 
         int max = 0;
 
-        for(int i = 0 ; i < arr.length; i++){
+        for(int i = 0 ; i < arr.length/2; i++){
 
             int temp = arr[i] + arr[arr.length - i - 1];
 
