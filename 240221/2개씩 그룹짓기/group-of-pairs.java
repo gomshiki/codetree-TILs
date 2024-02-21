@@ -23,8 +23,8 @@ public class Main {
 
         int max = 0;
 
-        for(int i = 0 ; i < arr.length/2; i++){
-
+        for(int i = 0 ; i < arr.length; i++){
+            System.out.println(arr[i]);
             int temp = arr[i] + arr[arr.length - i - 1];
 
             if(temp > max) max = temp;
