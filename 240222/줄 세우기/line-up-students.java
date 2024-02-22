@@ -13,16 +13,16 @@ class Student implements Comparable<Student> {
 
     @Override
     public int compareTo(Student student){
-
-        if(this.height != student.height){
-            return student.weight - this.weight;
-            if(this.weight != student.weight){
-                return student.height - this.height;
+        if(student.height == this.height) {
+            
+            if(student.weight == student.height){
+                return student.id - this.id;
             }
-        }
-    
 
-        return student.id - this.id;
+            return student.weight - this.weight;
+        }
+        
+        return student.height - this.height;
     }
 }
 
