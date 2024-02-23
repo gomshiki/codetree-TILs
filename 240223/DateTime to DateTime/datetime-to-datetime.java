@@ -21,7 +21,7 @@ public class Main {
         int startHour = 11;
         int startMin = 11;
     
-        if(startDate >= day && startHour >= hour && startMin > min) return -1;
+        if(startDate >= day && startHour <= hour && startMin > min) return -1;
 
         // 60min = 1 hour
         // 24 hour = 1day
