@@ -14,7 +14,7 @@ public class Main {
 
         n = sc.nextInt();
 
-        int[][] arr = new int[n][n];
+        int[][] arr = new int[100][100];
         for(int i = 0 ; i < n ; i++ ){
             for(int j = 0 ; j < n; j++){
                 arr[i][j] = sc.nextInt();
@@ -40,6 +40,7 @@ public class Main {
                 for(int dirNum = 0; dirNum < 4; dirNum++){
                     int nx = x + dx[dirNum];
                     int ny = y + dy[dirNum];
+                    
                     if(inRange(nx, ny) && arr[nx][ny] == 1){
                         cnt++;
                     }                    
