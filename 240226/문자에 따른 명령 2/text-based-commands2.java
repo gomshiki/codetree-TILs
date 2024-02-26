@@ -27,8 +27,8 @@ public class Main {
             }else if(dirInfo == 'R'){
                 dirNum = (dirNum + 1) % 4;
             }else if(dirInfo == 'F'){
-                nx = x + dx[dirNum];
-                ny = y + dy[dirNum];
+                nx = nx + dx[dirNum];
+                ny = ny + dy[dirNum];
             }
         }
 
