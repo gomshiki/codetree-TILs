@@ -12,31 +12,18 @@ public class Main {
         for(int i = 0; i < n ; i++){
             arr[i] = sc.nextInt();
         }
-
-        int cnt = 0;
-        int[] maxs = new int[n];
-
-        for(int i = 0 ; i < arr.length; i++){
-            
-            if(i == 0 || arr[i-1] == arr[i]){
-
-                cnt++;
-                //System.out.println(cnt);
-
-            }else{
-
-                maxs[i] = cnt;
-                cnt= 1;
-
-            }
         
+        int ans = 0, cnt = 0;
+        for(int i = 0 ; i < n ; i++){
+            if(i >= 1 && arr[i] == arr[i-1]){
+                cnt++;
+            }else{
+                cnt = 1;
+            }
+
+            ans = Math.max(ans, cnt);
         }
 
-        int max = 0;
-        for(int i = 0 ; i<maxs.length ; i++){
-            if(maxs[i] > max) max = maxs[i];
-        }
-
-        System.out.println(max);
+        System.out.println(ans);
     }
 }
