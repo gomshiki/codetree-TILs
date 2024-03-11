@@ -14,10 +14,29 @@ public class Main {
         }
 
         int cnt = 0;
+        int[] maxs = new int[n];
+
         for(int i = 0 ; i < arr.length; i++){
-            if(i == 0 || arr[i-1] == arr[i]) cnt++;
+            
+            if(i == 0 || arr[i-1] == arr[i]){
+
+                cnt++;
+                //System.out.println(cnt);
+
+            }else{
+
+                maxs[i] = cnt;
+                cnt= 1;
+
+            }
+        
         }
 
-        System.out.println(cnt);
+        int max = 0;
+        for(int i = 0 ; i<maxs.length ; i++){
+            if(maxs[i] > max) max = maxs[i];
+        }
+
+        System.out.println(max);
     }
 }
