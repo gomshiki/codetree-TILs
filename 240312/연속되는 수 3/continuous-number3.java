@@ -20,10 +20,11 @@ public class Main {
             // 음수 * 음수 = 양수, 양수 * 양수 = 양수
             if(i == 0 || arr[i-1] * arr[i] > 0 ){
                 cnt++;
-            }else if(i == arr.length-1 || arr[i-1] * arr[i] < 0) {
+            }else {
                 ans = Math.max(ans, cnt);
                 cnt = 1;
             }
+            ans = Math.max(ans, cnt);
         }
 
         System.out.println(ans);
