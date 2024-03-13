@@ -20,9 +20,11 @@ public class Main {
             if(i >= 1 && arr[i-1] < arr[i]){
                 cnt++;
             }else{
-                ans = Math.max(ans, cnt);
+                
                 cnt = 1;
             }
+
+            ans = Math.max(ans, cnt);
 
         }
 
